@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="title">
+            <h1>Budget Tracker System</h1>
+        </div>
+
+        <main>
+            <div class="detail-1">
+                <article class="part-1">
+                    <h1>Add Budget</h1>
+                    <p>Budget:</p>
+                    <input type="number" > <br>
+                    <button onclick="" class="budget-btn" >Add Budget</button>
+                </article>
+
+                <article class="part-2">
+                    <h1>Add Expense</h1>
+                    <p>Expense Title:</p>
+                    <input type="text"> <br>
+                    <p>Amount:</p>
+                    <input  type="number" > <br>
+                    <button onclick="" class="expense-btn">Add Expense</button>
+                </article>
+                <button class="reset-btn">Reset All</button>
+            </div>
+
+            <div class="detail-2">
+                <article>
+                    <p >Total Budget: <span>10000.00</span>  </p>
+                    <p >Total Expense: <span></span></p>
+                    <p>Budget Left: 2500.00</p>
+                </article>
+
+                <article>
+                    <h1>Expense History:</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Expense Name</th>
+                                <th>Amount</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Grocery</td>
+                                <td>2000.00</td>
+                                <td><button class="remove-btn">Remove</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
